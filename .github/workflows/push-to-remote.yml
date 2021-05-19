@@ -30,4 +30,5 @@ jobs:
         run: |
           BEFORE_SHA=$(jq -r '.before' $GITHUB_EVENT_PATH)
           AFTER_SHA=$(jq -r '.after' $GITHUB_EVENT_PATH)
-          git diff $BEFORE_SHA --name-only
+          git diff $BEFORE_SHA --name-only > diff.txt
+          cat diff.txt
