@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: get the diff of files
-        run: echo Got!
+        run: ls
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
